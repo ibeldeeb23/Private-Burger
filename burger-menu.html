@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برايفت برجر - Private Burger</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="burger-style.css">
+</head>
+<body>
+    <!-- Animated Background Icons -->
+    <div class="bg-icons">
+        <div class="icon icon-1">🍔</div>
+        <div class="icon icon-2">🍟</div>
+        <div class="icon icon-3">🥤</div>
+        <div class="icon icon-4">🧀</div>
+        <div class="icon icon-5">🥓</div>
+        <div class="icon icon-6">🍔</div>
+        <div class="icon icon-7">🍟</div>
+        <div class="icon icon-8">🥤</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="logo.png" alt="Private Burger" class="nav-logo">
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" data-en="Home">الرئيسية</a></li>
+                <li><a href="#menu" data-en="Menu">المنيو</a></li>
+                <li><a href="#about" data-en="About Us">من نحن</a></li>
+                <li><a href="#contact" data-en="Contact">تواصل معنا</a></li>
+                <li><button id="langToggle" class="lang-btn">EN</button></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-logo-wrapper">
+                <img src="logo.png" alt="Private Burger" class="hero-logo">
+            </div>
+            <h1 class="hero-title" data-en="Best Burger in Town">أفضل برجر في المدينة</h1>
+            <p class="hero-subtitle" data-en="A unique experience with the finest fresh meats">تجربة فريدة مع أجود أنواع اللحوم الطازجة</p>
+            <a href="#menu" class="hero-btn" data-en="Order Now">اطلب الآن</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Special Burger Menu">قائمة البرجر المميزة</h2>
+                <p class="section-subtitle" data-en="Choose from our unique selection">اختر من تشكيلتنا الفريدة</p>
+            </div>
+
+            <div class="burger-grid">
+                <!-- Burger Card 1 -->
+                <div class="burger-card">
+                    <div class="card-img-wrapper">
+                        <img src="1.jpeg" alt="سماش أوريجنال">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="burger-name" data-en="Smash Original">سماش أوريجنال</h3>
+                        <p class="burger-desc" data-en="Smash burger with amazing cheddar cheese, ketchup, fresh lettuce, pickle slices and creamy Texas sauce">سماش برجر مع الجبنة الشيدر الخطيرة و الكاتشب مع الخس الفريش وشرائح الخيار المخلل وصوص التكساس الكريمي</p>
+                        <button class="order-btn" data-en="Order Now">اطلب الآن</button>
+                    </div>
+                </div>
+
+                <!-- Burger Card 2 - Featured -->
+                <div class="burger-card featured">
+                    <div class="featured-badge" data-en="Most Popular ⭐">الأكثر طلباً ⭐</div>
+                    <div class="card-img-wrapper">
+                        <img src="WhatsApp Image 2026-04-21 at 12.59.55 AM (4).jpeg" alt="كاراميل أونيون">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="burger-name" data-en="Caramel Onion">كاراميل أونيون</h3>
+                        <p class="burger-desc" data-en="Smash burger with caramelized onion, amazing cheddar cheese, ketchup, fresh lettuce, pickle slices and creamy Texas sauce">سماش برجر مع البصل المكرمل والجبنة الشيدر الخطيرة و الكاتشب مع الخس الفريش وشرائح الخيار المخلل وصوص التكساس الكريمي</p>
+                        <button class="order-btn" data-en="Order Now">اطلب الآن</button>
+                    </div>
+                </div>
+
+                <!-- Burger Card 3 -->
+                <div class="burger-card">
+                    <div class="card-img-wrapper">
+                        <img src="WhatsApp Image 2026-04-21 at 12.59.55 AM (5).jpeg" alt="هاليبينو تشولز">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="burger-name" data-en="Jalapeño Chills 🌶️">هاليبينو تشولز 🌶️</h3>
+                        <p class="burger-desc" data-en="Smash burger with jalapeño peppers, spicy creamy dynamite sauce, amazing cheddar cheese, fresh lettuce and pickle slices">سماش برجر مع الفلفل الهاليبينو و صوص الديناميت الكريمي الحار والجبنة الشيدر الخطيرة مع الخس الفريش وشرائح الخيار المخلل</p>
+                        <button class="order-btn" data-en="Order Now">اطلب الآن</button>
+                    </div>
+                </div>
+
+                <!-- Burger Card 4 -->
+                <div class="burger-card">
+                    <div class="card-img-wrapper">
+                        <img src="WhatsApp Image 2026-04-21 at 12.59.55 AM (6).jpeg" alt="سافاري جوسي">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="burger-name" data-en="Safari Juicy">سافاري جوسي</h3>
+                        <p class="burger-desc" data-en="Smash burger with crispy mozzarella sticks, ketchup, amazing cheddar cheese, fresh lettuce, pickle slices and creamy Texas sauce">سماش برجر مع اصابع الموتزاريلا الكريسبي مع الكاتشب و الجبنة الشيدر الخطيرة مع الخس الفريش وشرائح الخيار المخلل وصوص التيكساس الكريمي</p>
+                        <button class="order-btn" data-en="Order Now">اطلب الآن</button>
+                    </div>
+                </div>
+
+                <!-- Burger Card 5 -->
+                <div class="burger-card">
+                    <div class="card-img-wrapper">
+                        <img src="WhatsApp Image 2026-04-21 at 12.59.56 AM (1).jpeg" alt="مشروم رانش">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="burger-name" data-en="Mushroom Ranch">مشروم رانش</h3>
+                        <p class="burger-desc" data-en="Smash burger with sautéed mushroom pieces, creamy ranch sauce, fresh lettuce and pickle slices">سماش برجر مع قطع المشروم السوتيه وصوص الرانش الكريمي مع الخس الفريش وشرائح الخيار المخلل</p>
+                        <button class="order-btn" data-en="Order Now">اطلب الآن</button>
+                    </div>
+                </div>
+
+                <!-- Burger Card 6 -->
+                <div class="burger-card">
+                    <div class="card-img-wrapper">
+                        <img src="WhatsApp Image 2026-04-21 at 12.59.56 AM (2).jpeg" alt="بيكون مشروم">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="burger-name" data-en="Bacon Mushroom">بيكون مشروم</h3>
+                        <p class="burger-desc" data-en="Smash burger with sautéed mushrooms, beef bacon slices, creamy mayo sauce, amazing cheddar cheese, fresh lettuce and pickle slices">قطعة سماش برجر مع المشروم السوتيه وشرائح البيف بيكون مع صوص المايونيز الكريمي والجبنه الشيدر الخطيرة مع الخس الفريش وشرائح الخيار المخلل</p>
+                        <button class="order-btn" data-en="Order Now">اطلب الآن</button>
+                    </div>
+                </div>
+
+                <!-- Burger Card 7 -->
+                <div class="burger-card">
+                    <div class="card-img-wrapper">
+                        <img src="WhatsApp Image 2026-04-21 at 12.59.56 AM (3).jpeg" alt="أونيون رينجز برجر">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="burger-name" data-en="Onion Rings Burger">أونيون رينجز برجر</h3>
+                        <p class="burger-desc" data-en="Smash burger with crispy onion rings, BBQ sauce, amazing cheddar cheese, fresh lettuce, pickle slices and creamy Texas sauce">قطعة سماش برجر مع حلقات البصل الكريسبي مع صوص الباربكيو والجبنة الشيدر الخطيرة مع الخس الفريش وشرائح الخيار المخلل وصوص التيكساس الكريمي</p>
+                        <button class="order-btn" data-en="Order Now">اطلب الآن</button>
+                    </div>
+                </div>
+
+                <!-- Burger Card 8 -->
+                <div class="burger-card">
+                    <div class="card-img-wrapper">
+                        <img src="WhatsApp Image 2026-04-21 at 12.59.56 AM (4).jpeg" alt="برايفت">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="burger-name" data-en="Private">برايفت</h3>
+                        <p class="burger-desc" data-en="Smash burger with mozzarella sticks and beef bacon, amazing cheddar cheese, ketchup, creamy Texas sauce, fresh lettuce and pickle slices">قطعة سماش برجر مع اصابع الموتزاريلا والبيف بيكون مع الجبنة الشيدر الخطيرة والكاتشب وصوص التيكساس الكريمي مع الخس الفريش وشرائح الخيار المخلل</p>
+                        <button class="order-btn" data-en="Order Now">اطلب الآن</button>
+                    </div>
+                </div>
+
+                <!-- Burger Card 9 -->
+                <div class="burger-card">
+                    <div class="card-img-wrapper">
+                        <img src="WhatsApp Image 2026-04-21 at 12.59.56 AM (5).jpeg" alt="جامبو برجر">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="burger-name" data-en="Jumbo Burger">جامبو برجر</h3>
+                        <p class="burger-desc" data-en="Large burger, cheese, fresh vegetables, special sauce">برجر كبير، جبنة، خضار طازج، صوص خاص</p>
+                        <button class="order-btn" data-en="Order Now">اطلب الآن</button>
+                    </div>
+                </div>
+
+                <!-- Burger Card 10 -->
+                <div class="burger-card">
+                    <div class="card-img-wrapper">
+                        <img src="WhatsApp Image 2026-04-21 at 12.59.56 AM.jpeg" alt="تشيز بيكون">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="burger-name" data-en="Cheese Bacon">تشيز بيكون</h3>
+                        <p class="burger-desc" data-en="Smash burger with beef bacon slices, amazing cheddar cheese, ketchup, fresh lettuce, pickle slices and creamy Texas sauce">سماش برجر مع شرائح البيف بيكون والجبنة الشيدر الخطيرة و الكاتشب مع الخس الفريش وشرائح الخيار المخلل وصوص التكساس الكريمي</p>
+                        <button class="order-btn" data-en="Order Now">اطلب الآن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="contact-title" data-en="Contact Us">تواصل معنا</h2>
+            <div class="contact-grid">
+                <a href="https://wa.me/201128618870" target="_blank" class="contact-card contact-link">
+                    <div class="contact-icon">💬</div>
+                    <h3 data-en="WhatsApp">واتساب</h3>
+                    <p>01128618870</p>
+                </a>
+                <a href="https://www.facebook.com/people/Private-Burger/61589259940522/" target="_blank" class="contact-card contact-link">
+                    <div class="contact-icon">👍</div>
+                    <h3 data-en="Facebook">فيسبوك</h3>
+                    <p data-en="Follow Us">تابعنا</p>
+                </a>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3 data-en="Address">العنوان</h3>
+                    <p data-en="Cairo, Egypt">القاهرة، مصر</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">⏰</div>
+                    <h3 data-en="Working Hours">مواعيد العمل</h3>
+                    <p data-en="12 PM - 12 AM">12 ظهراً - 12 منتصف الليل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-en="&copy; 2026 Private Burger">&copy; 2026 برايفت برجر - Private Burger</p>
+    </footer>
+
+    <script src="burger-script.js"></script>
+</body>
+</html>
